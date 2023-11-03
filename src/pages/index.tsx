@@ -12,12 +12,12 @@ export default function Home() {
         <title>Simplifique decisões - Decisão Simples</title>
       </Head>
       <div>
-        <header className='w-full sticky top-0 bg-white/70 backdrop-blur-sm border-b border-white/90 flex items-center justify-center'>
+        <header className='w-full sticky top-0 bg-white/80 backdrop-blur-sm border-b border-white/90 flex items-center justify-center'>
           <div className='w-full max-w-7xl px-6 pb-6 pt-6 flex items-center justify-center md:justify-between'>
             <Image src={'/logo.svg'} width={1080} height={186} alt='Decisão Simples' className='w-[250px] md:w-[300px]' />
             <ul className='hidden md:flex items-center gap-8'>
               <li><Link href={'#'} className='text-teal-600 transition-colors hover:text-teal-700' >Sobre o projeto</Link></li>
-              <li><Link href={'#'} className='bg-teal-600 px-4 py-2 rounded-lg text-white transition-colors hover:bg-teal-500 font-semibold'>Simplificar decisão</Link></li>
+              <li><Link href={'#simplificar'} className='bg-teal-600 px-4 py-2 rounded-lg text-white transition-colors hover:bg-teal-500 font-semibold'>Simplificar decisão</Link></li>
             </ul>
           </div>
         </header>
@@ -30,9 +30,13 @@ export default function Home() {
             </div>
             
           </HeroSection>
-          <Section className='bg-teal-500 py-16'>
-            <DecisaoForm />
-          </Section>
+          <div id='simplificar'>
+            <Section className='bg-teal-500 py-32 -mt-12' >
+              <h1 className='text-center text-white font-bold text-xl md:text-3xl'>Informe os dados da decisão</h1>
+              <DecisaoForm />
+            </Section>
+          </div>
+          
           <Section className='bg-teal-500 py-64'>
             oi
           </Section>
